@@ -15,6 +15,6 @@ public class MessageController {
 
     @GetMapping("/testmessages")
     public String getTestMessage() {
-        return messageConfig.getMessage();
+        return "test " + messageConfig.getMessage();
     }
 }
